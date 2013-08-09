@@ -1,0 +1,960 @@
+<!DOCTYPE html> 
+<html manifest="main.manifest">
+<head>
+<meta charset="utf-8">
+
+<meta name="description" content="">
+
+<title>Missionary Helper - Cambodia</title>
+
+<!-- Mobile viewport optimization h5bp.com/ad -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+<!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/high/apple-touch-icon.png">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/med/apple-touch-icon.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="img/low/apple-touch-icon-precomposed.png">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="img/low/apple-touch-icon.png">
+
+  <!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <!-- <script>(function(){var a;if(navigator.platform==="iPad"){a=window.orientation!==90||window.orientation===-90?"img/startup-tablet-landscape.png":"img/startup-tablet-portrait.png"}else{a=window.devicePixelRatio===2?"img/startup-retina.png":"img/startup.png"}document.write('<link rel="apple-touch-startup-image" href="'+a+'"/>')})()</script> -->
+  
+  <!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
+  <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+  
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+  
+    
+<link rel="apple-touch-icon" href="icon.png"/>
+<link rel="apple-touch-startup-image" href="home.png" />
+
+<link rel="stylesheet" href="css/themes/khmer-red.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.0.min-edited.css" />
+<link rel="stylesheet" href="css/missionary-helper-cambodia.css" />
+
+
+<!--Bubble bookmark notification for iOS-->
+<script type="text/javascript" src="js/bookmark_bubble.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+
+<!--JQuery-->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+<!-- This reference to phonegap.js will allow for code hints as long as the current site has been configured as a mobile application. 
+	 To configure the site as a mobile application, go to Site -> Mobile Applications -> Configure Application Framework... -->
+<!--<script src="js/phonegap.js" type="text/javascript"></script>  -->
+</head> 
+<body> 
+
+<div data-role="page" id="page" >
+	<div data-role="header">
+    	<a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+		<h1>Main Menu</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true" data-theme="a">
+			<li><a href="#page2" data-transition="slidedown"><img src="img/cross3.jpg"><center><h2>Bible Verses</h2></center></a></li>
+            <li><a href="#page3" data-transition="slidedown"><img src="img/talking3.jpg"><center><h2>Words & Phrases</h2></center></a></li>
+            <li><a href="#page5" data-transition="slidedown"><img src="img/map2.jpg"><center><h2>Maps</h2></center></a></li>
+            <li><a href="#page7" data-transition="slidedown"><img src="img/facts-icon.jpg"><center><h2>Facts & Figures</h2></center></a></li>
+            <li><a href="#page6" data-transition="slidedown"><img src="img/exclamation-mark-small.jpg"><center><h2>Emergency Contacts</h2></center></a></li>
+			<li><a href="#page4" data-transition="slidedown"><img src="img/questionmark2.jpg"><center><h2>About The App</h2></center></a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Bible Verses</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    	<ul data-role="listview" data-inset="true" data-theme="a">
+        
+		<li><a href="#dialogJohn316" data-transition="slidedown" data-rel="dialog"><Center>John 3:16</Center></a></li>  
+        <li><a href="#dialogRomans3-23" data-transition="slidedown" data-rel="dialog"><Center>Romans 3:23</Center></a></li>
+        <li><a href="#dialogRomans5-8" data-transition="slidedown" data-rel="dialog"><Center>Romans 5:8</Center></a></li>
+        <li><a href="#dialogRomans6-23" data-transition="slidedown" data-rel="dialog"><Center>Romans 6:23</Center></a></li>
+        <li><a href="#dialogRomans10-9-10" data-transition="slidedown" data-rel="dialog"><Center>Romans 10:9-10</Center></a></li>
+        <li><a href="#dialogRomans10-13" data-transition="slidedown" data-rel="dialog"><Center>Romans 10:13</Center></a></li>
+        <li><a href="#dialogEphesians2-8-9" data-transition="slidedown" data-rel="dialog"><Center>Ephesians 2:8-9</Center></a></li>
+        <li><a href="#dialog2Corinthians5-21" data-transition="slidedown" data-rel="dialog"><Center>2 Corinthians 5:21</Center></a></li>
+        </ul>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Phrases</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+        <ul data-role="listview" data-inset="true" data-theme="a">
+        
+        <li><a href="#missionary" data-transition="slidedown">Christian Words & Phrases</a></li>
+        <li><a href="#salutations" data-transition="slidedown">Salutations</a></li>
+        <li><a href="#Iam" data-transition="slidedown">I am...</a></li>
+        <li><a href="#where" data-transition="slidedown">Where Is...</a></li>
+        <li><a href="#emergency" data-transition="slidedown">In An Emergency...</a></li>
+        <li><a href="#places" data-transition="slidedown">Common Places & Things</a></li>
+        <li><a href="#phrases" data-transition="slidedown">Common Phrases</a></li>
+        <li><a href="#numbers" data-transition="slidedown">Numbers</a></li>
+        <li><a href="#days" data-transition="slidedown">Days Of The Week</a></li>
+        <li><a href="#food" data-transition="slidedown">Food</a></li>
+        <li><a href="#drinks" data-transition="slidedown">Drinks</a></li> 
+
+        </ul>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>About the App</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+		<center><i><b>Name:   Missionary Helper - Cambodia<br>
+        <b>Version:    0.1 </i></b><br></center>
+        <a href="#dialogAbout" data-role="button" data-rel="dialog" data-theme="a">About the Developer</a>	
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Maps of Cambodia</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    <ul data-role="listview" data-inset="true" data-theme="a">
+		<li><a href="#dialogMap1" data-transition="slidedown"><img src="img/cambodia-map-world-icon.jpg"><center><h2>Cambodia World Map</h2></center></a></li>
+        <li><a href="#dialogMap2" data-transition="slidedown"><img src="img/PhnomPenh-icon.jpg"><center><h2>Phnom Penh</h2></center></a></li>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page6" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Emergency Contacts</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">
+    	<a href="#dialogPhoneNumbers" data-role="button" data-rel="dialog" data-theme="a">Emergency Phone Numbers</a>	
+    	<a href="#dialogEmbassyMap" data-role="button" data-rel="dialog" data-theme="a">Map To Embassy</a>
+        <br>
+        <u>Taxi Instructions:</u>
+        <a href="#dialogHospital" data-role="button" data-rel="dialog" data-theme="a">"Take me to the Hospital"</a>
+        <a href="#dialogEmbassy" data-role="button" data-rel="dialog" data-theme="a">"Take me to the Embassy"</a>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="page7" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Facts & Figures</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    	<a href="#dialogCulture" data-role="button" data-rel="dialog" data-theme="a">Culture</a>
+        <a href="#dialogGeography" data-role="button" data-rel="dialog" data-theme="a">Geography</a>
+        <a href="#dialogKhmerRouge" data-role="button" data-rel="dialog" data-theme="a">Khmer Rouge</a>
+        <a href="#dialogGovernment" data-role="button" data-rel="dialog" data-theme="a">Government</a>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="EmergencyNumbers" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Emergency Phone Numbers</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    	<a href="#dialogCulture" data-role="button" data-rel="dialog" data-theme="a">Culture</a>
+        <a href="#dialogGeography" data-role="button" data-rel="dialog" data-theme="a">Geography</a>
+        <a href="#dialogKhmerRouge" data-role="button" data-rel="dialog" data-theme="a">Khmer Rouge</a>
+        <a href="#dialogGovernment" data-role="button" data-rel="dialog" data-theme="a">Government</a>
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="salutations" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Salutations</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1s" src="mp3/Hello.mp3" preload="auto"></audio>
+    <audio id="audio2s" src="mp3/Goodbye.mp3" preload="auto"></audio>
+    <audio id="audio3s" src="mp3/GoodMorning.mp3" preload="auto"></audio>
+    <audio id="audio4s" src="mp3/GoodAfternoon.mp3" preload="auto"></audio>
+    <audio id="audio5s" src="mp3/GoodEvening.mp3" preload="auto"></audio>
+    <audio id="audio6s" src="mp3/GoodNight.mp3" preload="auto"></audio>
+    <audio id="audio7s" src="mp3/ExcuseMe-PardonMe.mp3" preload="auto"></audio>
+    <audio id="audio8s" src="mp3/PleasedToMeetYou.mp3" preload="auto"></audio>
+    <audio id="audio9s" src="mp3/MyNameIs.mp3" preload="auto"></audio>
+    <audio id="audio10s" src="mp3/WhatIsYourName.mp3" preload="auto"></audio>
+    <audio id="audio11s" src="mp3/ThankYou.mp3" preload="auto"></audio>
+    <audio id="audio12s" src="mp3/HowAreYou.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>What Is Your Name?</Center></a></li>    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>My Name Is...</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio12s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>How Are You?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Excuse Me/Pardon Me</Center></a></li>     
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Thank You</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Hello</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Goodbye</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Good Morning</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Good Afternoon</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Good Evening</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Good Night</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8s');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Pleased To Meet You</Center></a></li> 
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="a" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Common Phrases</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <!--<audio id="audio1z" src="mp3/.mp3" preload="auto"></audio>-->
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="places" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Places & Things</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1p" src="mp3/Airport.mp3" preload="auto"></audio>
+    <audio id="audio2p" src="mp3/Taxi.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Airport</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Taxi</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center></Center></a></li> 
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="where" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Where Is...</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1w" src="mp3/WhereIsTheBathroom.mp3" preload="auto"></audio>
+    <audio id="audio2w" src="mp3/WhereIsTheHotel.mp3" preload="auto"></audio>
+    <audio id="audio3w" src="mp3/WhereIsTheAirport.mp3" preload="auto"></audio>
+    <audio id="audio4w" src="mp3/WhereIsAmericanEmbassy.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1w');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Where Is The Bathroom?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2w');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Where Is The Hotel?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3w');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Where Is The Airport?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4w');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Where Is the American Embassy?</Center></a></li> 
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="emergency" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Words To Use In An Emergency</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1e" src="mp3/HelpMe.mp3" preload="auto"></audio>
+    <audio id="audio2e" src="mp3/IAmInjuredAndNeedHelp.mp3" preload="auto"></audio>
+    <audio id="audio3e" src="mp3/IWasRobbed.mp3" preload="auto"></audio>
+    <audio id="audio4e" src="mp3/TakeMeToAmericanEmbassy.mp3" preload="auto"></audio>
+    <audio id="audio5e" src="mp3/TakeMeToHospital.mp3" preload="auto"></audio>
+    <audio id="audio6e" src="mp3/INeedAPhone.mp3" preload="auto"></audio>
+    <audio id="audio7e" src="mp3/INeedToContactThePolice.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Help Me</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Injured And Need Help</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Was Robbed</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Take Me To The American Embassy</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Take Me To The Hospital</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Need A Phone</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7e');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Need To Contact The Police</Center></a></li> 
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="days" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Days Of The Week</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1da" src="mp3/Monday.mp3" preload="auto"></audio>
+    <audio id="audio2da" src="mp3/Tuesday.mp3" preload="auto"></audio>
+    <audio id="audio3da" src="mp3/Sunday.mp3" preload="auto"></audio>
+    <audio id="audio4da" src="mp3/Wednesday.mp3" preload="auto"></audio>
+    <audio id="audio5da" src="mp3/Thursday.mp3" preload="auto"></audio>
+    <audio id="audio6da" src="mp3/Friday.mp3" preload="auto"></audio>
+    <audio id="audio7da" src="mp3/Saturday.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Sunday</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Monday</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Tuesday</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Wednesday</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Thursday</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Friday</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7da');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Saturday</Center></a></li> 
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="christian" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Christian Words & Phrases</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1c" src="mp3/JesusChrist.mp3" preload="auto"></audio>
+    <audio id="audio2c" src="mp3/Bible.mp3" preload="auto"></audio>
+    <audio id="audio3c" src="mp3/GodBlessYou.mp3" preload="auto"></audio>
+    <audio id="audio4c" src="mp3/AreYouAChristian.mp3" preload="auto"></audio>
+    <audio id="audio5c" src="mp3/DoYouBelieveInJesusChrist.mp3" preload="auto"></audio>
+    <audio id="audio6c" src="mp3/JesusLovesUsAll.mp3" preload="auto"></audio>
+    <audio id="audio7c" src="mp3/Family.mp3" preload="auto"></audio>
+    <audio id="audio8c" src="mp3/Friend.mp3" preload="auto"></audio>
+    <audio id="audio9c" src="mp3/DoYouKnowAboutJesusChrist.mp3" preload="auto"></audio>
+    <audio id="audio10c" src="mp3/Pastor.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Jesus Christ</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>The Bible</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>God Bless You</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Are You Christian?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Do You Believe In Jesus Christ?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Do You Know About Jesus Christ?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Jesus Loves Everyone</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Family</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Friend</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10c');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Pastor</Center></a></li>
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="Iam" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>I am...</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1a" src="mp3/IAmAmerican.mp3" preload="auto"></audio>
+    <audio id="audio2a" src="mp3/IAmHungry.mp3" preload="auto"></audio>
+    <audio id="audio3a" src="mp3/IAmThirsty.mp3" preload="auto"></audio>
+    <audio id="audio4a" src="mp3/IAmTired.mp3" preload="auto"></audio>
+    <audio id="audio5a" src="mp3/IAmSleepy.mp3" preload="auto"></audio>
+    <audio id="audio6a" src="mp3/IAmLost.mp3" preload="auto"></audio>
+    <audio id="audio7a" src="mp3/IAmInjuredAndNeedHelp.mp3" preload="auto"></audio>
+    <audio id="audio8a" src="mp3/IDontFeelWell.mp3" preload="auto"></audio>
+    <audio id="audio9a" src="mp3/ItIsVeryHot.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am American</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Hungry</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Thirsty</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Tired</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Sleepy</Center></a></li> 
+
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Hot</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Not Feeling Well</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Lost</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7a');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Am Injured/Sick And Need Help</Center></a></li>  
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="phrases" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Common Phrases</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1p" src="mp3/DoYouSpeakEnglish.mp3" preload="auto"></audio>
+    <audio id="audio2p" src="mp3/ExcuseMe-PardonMe.mp3" preload="auto"></audio>
+    <audio id="audio3p" src="mp3/HowMuchDoesThisCost.mp3" preload="auto"></audio>
+	<audio id="audio4p" src="mp3/IDontUnderstand.mp3" preload="auto"></audio>
+    <audio id="audio5p" src="mp3/IDontSpeakKhmer.mp3" preload="auto"></audio>
+    <audio id="audio6p" src="mp3/IDontKnow.mp3" preload="auto"></audio>
+    <audio id="audio7p" src="mp3/INeedAPhone.mp3" preload="auto"></audio>
+    <audio id="audio8p" src="mp3/IWouldLike.mp3" preload="auto"></audio>
+    <audio id="audio9p" src="mp3/MayITakeYourPicture.mp3" preload="auto"></audio>
+    <audio id="audio10p" src="mp3/SmilePlease.mp3" preload="auto"></audio>
+    <audio id="audio11p" src="mp3/PleaseSpeakMoreSlowly.mp3" preload="auto"></audio>
+    <audio id="audio12p" src="mp3/Yes.mp3" preload="auto"></audio>
+    <audio id="audio13p" src="mp3/No-NoThankYou.mp3" preload="auto"></audio>
+    <audio id="audio14p" src="mp3/INeedAnElectricalOutlet.mp3" preload="auto"></audio>
+    <audio id="audio15p" src="mp3/PleaseWriteItDown.mp3" preload="auto"></audio>
+    <audio id="audio16p" src="mp3/PleaseTurnOnAC.mp3" preload="auto"></audio>
+    <audio id="audio17p" src="mp3/WhatTimeIsIt.mp3" preload="auto"></audio>
+
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio12p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Yes</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio13p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>No/No Thank you</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Excuse Me/Pardon Me</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Do You Speak English?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Please Speak More Slowly</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio15p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Please Write It Down</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Don't Speak Khmer</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Don't Understand</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Don't Know</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Would Like...</Center></a></li>  
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>May I Take Your Photo</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Smile Please! (for photo)</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>How Much Does This Cost?</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Need A Phone</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio14p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>I Need An Electrical Outlet</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio16p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Please Turn On The A/C</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio17p');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>What Time Is It?</Center></a></li> 
+
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="drinks" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Drinks</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1d" src="mp3/Soda.mp3" preload="auto"></audio>
+    <audio id="audio2d" src="mp3/OrangeJuice.mp3" preload="auto"></audio>
+    <audio id="audio3d" src="mp3/BottledWater.mp3" preload="auto"></audio>
+    <audio id="audio4d" src="mp3/ColdCoffee.mp3" preload="auto"></audio>
+    <audio id="audio5d" src="mp3/HotCoffee.mp3" preload="auto"></audio>
+    <audio id="audio6d" src="mp3/ColdTea.mp3" preload="auto"></audio>
+    <audio id="audio7d" src="mp3/HotTea.mp3" preload="auto"></audio>
+    <audio id="audio8d" src="mp3/NoIcePlease.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Soda</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Orange Juice</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Bottle Water</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Cold Coffee</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Hot Coffee</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Cold Tea</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Hot Tea</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8d');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>No Ice Please</Center></a></li> 
+
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="food" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Food</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    
+    <audio id="audio1f" src="mp3/Banana.mp3" preload="auto"></audio>
+    <audio id="audio2f" src="mp3/Mango.mp3" preload="auto"></audio>
+    <audio id="audio3f" src="mp3/Lychee.mp3" preload="auto"></audio>
+    <audio id="audio4f" src="mp3/Jackfruit.mp3" preload="auto"></audio>
+    <audio id="audio5f" src="mp3/Rice.mp3" preload="auto"></audio>
+    <audio id="audio6f" src="mp3/Pork.mp3" preload="auto"></audio>
+    <audio id="audio7f" src="mp3/Chicken.mp3" preload="auto"></audio>
+    <audio id="audio8f" src="mp3/Beef.mp3" preload="auto"></audio>
+    <audio id="audio9f" src="mp3/Shrimp.mp3" preload="auto"></audio>
+    <audio id="audio10f" src="mp3/Crab.mp3" preload="auto"></audio>
+    <audio id="audio11f" src="mp3/Lobster.mp3" preload="auto"></audio>
+    <audio id="audio12f" src="mp3/SteamedMeat.mp3" preload="auto"></audio>
+    <audio id="audio13f" src="mp3/FriedMeat.mp3" preload="auto"></audio>
+    <audio id="audio14f" src="mp3/GrilledMeat.mp3" preload="auto"></audio>
+    <audio id="audio15f" src="mp3/Soup-Pho.mp3" preload="auto"></audio>
+    <audio id="audio16f" src="mp3/Fish.mp3" preload="auto"></audio>
+    
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1f');"><!--<img src="img/1a.png" width="85" height="85">!--><Center>Banana</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Mango</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Lychee</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Jackfruit</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Rice</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Pork</Center></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio16f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Fish</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Chicken</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Beef</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Shrimp</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Crab</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Lobster</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio12f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Steamed</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio13f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Fried</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio14f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Grilled</Center></a></li> 
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio15f');"><!-- <img src="img/1a.png" width="85" height="85"> !--><Center>Noodle Soup (Pho)</Center></a></li> 
+  
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="numbers" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Numbers</h1><a href="index.html" data-role="button" data-icon="home" class="ui-btn-right">Home</a>
+	</div>
+	<div data-role="content">	
+    	<ul data-role="listview" data-inset="true" data-theme="a">
+        
+        <audio id="audio1" src="mp3/One.mp3" preload="auto"></audio>
+        <audio id="audio2" src="mp3/Two.mp3" preload="auto"></audio>
+        <audio id="audio3" src="mp3/Three.mp3" preload="auto"></audio>
+        <audio id="audio4" src="mp3/Four.mp3" preload="auto"></audio>
+        <audio id="audio5" src="mp3/Five.mp3" preload="auto"></audio>
+        <audio id="audio6" src="mp3/Six.mp3" preload="auto"></audio>
+        <audio id="audio7" src="mp3/Seven.mp3" preload="auto"></audio>
+        <audio id="audio8" src="mp3/Eight.mp3" preload="auto"></audio>
+        <audio id="audio9" src="mp3/Nine.mp3" preload="auto"></audio>
+        <audio id="audio10" src="mp3/Ten.mp3" preload="auto"></audio>
+        <audio id="audio11" src="mp3/Eleven.mp3" preload="auto"></audio>
+        <audio id="audio12" src="mp3/Twelve.mp3" preload="auto"></audio>
+        <audio id="audio13" src="mp3/Thirteen.mp3" preload="auto"></audio>
+        <audio id="audio14" src="mp3/Fourteen.mp3" preload="auto"></audio>
+        <audio id="audio15" src="mp3/Fifteen.mp3" preload="auto"></audio>
+        <audio id="audio16" src="mp3/Sixteen.mp3" preload="auto"></audio>
+        <audio id="audio17" src="mp3/Seventeen.mp3" preload="auto"></audio>
+        <audio id="audio18" src="mp3/Eighteen.mp3" preload="auto"></audio>
+        <audio id="audio19" src="mp3/Nineteen.mp3" preload="auto"></audio>
+        <audio id="audio20" src="mp3/Twenty.mp3" preload="auto"></audio>
+        <audio id="audio30" src="mp3/Thirty.mp3" preload="auto"></audio>
+        <audio id="audio40" src="mp3/Fourty.mp3" preload="auto"></audio>
+        <audio id="audio50" src="mp3/Fifty.mp3" preload="auto"></audio>
+        <audio id="audio60" src="mp3/Sixty.mp3" preload="auto"></audio>
+        <audio id="audio70" src="mp3/Seventy.mp3" preload="auto"></audio>
+        <audio id="audio80" src="mp3/Eighty.mp3" preload="auto"></audio>
+        <audio id="audio90" src="mp3/Ninety.mp3" preload="auto"></audio>
+        <audio id="audio100" src="mp3/Hundred.mp3" preload="auto"></audio>
+        
+        
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio1');"><img src="img/1a.png" width="85" height="85"><h1><Center>One</Center></h1></a></li>        <li><a href="" data-transition="slidedown" onClick="play_single_sound('audio2');"><img src="img/2a.png" width="85" height="85"><h1><Center>Two</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio3');"><img src="img/3a.png" width="85" height="85"><h1><Center>Three</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio4');"><img src="img/4a.png" width="85" height="85"><h1><Center>Four</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio5');"><img src="img/5a.png" width="85" height="85"><h1><Center>Five</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio6');"><img src="img/6a.png" width="85" height="85"><h1><Center>Six</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio7');"><img src="img/7a.png" width="85" height="85"><h1><Center>Seven</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio8');"><img src="img/8a.png" width="85" height="85"><h1><Center>Eight</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio9');"><img src="img/9a.png" width="85" height="85"><h1><Center>Nine</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio10');"><img src="img/10a.png" width="85" height="85"><h1><Center>Ten</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio11');"><img src="img/11a.png" width="85" height="85"><h1><Center>Eleven</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio12');"><img src="img/12a.png" width="85" height="85"><h1><Center>Twelve</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio13');"><img src="img/13a.png" width="85" height="85"><h1><Center>Thirteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio14');"><img src="img/14a.png" width="85" height="85"><h1><Center>Fourteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio15');"><img src="img/15a.png" width="85" height="85"><h1><Center>Fifteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio16');"><img src="img/16a.png" width="85" height="85"><h1><Center>Sixteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio17');"><img src="img/17a.png" width="85" height="85"><h1><Center>Seventeen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio18');"><img src="img/18a.png" width="85" height="85"><h1><Center>Eighteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio19');"><img src="img/19a.png" width="85" height="85"><h1><Center>Nineteen</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio20');"><img src="img/20.png" width="85" height="85"><h1><Center>Twenty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio30');"><img src="img/30.png" width="85" height="85"><h1><Center>Thirty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio40');"><img src="img/40.png" width="85" height="85"><h1><Center>Fourty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio50');"><img src="img/50.png" width="85" height="85"><h1><Center>Fifty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio60');"><img src="img/60.png" width="85" height="85"><h1><Center>Sixty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio70');"><img src="img/70.png" width="85" height="85"><h1><Center>Seventy</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio80');"><img src="img/80.png" width="85" height="85"><h1><Center>Eighty</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio90');"><img src="img/90.png" width="85" height="85"><h1><Center>Ninety</Center></h1></a></li>
+<li><a href="" data-transition="slidedown" onClick="play_single_sound('audio100');"><img src="img/100.png" width="85" height="85"><h1><Center>Hundred</Center></h1></a></li>
+        
+   <!-- Old Style     
+        <li><a href="#dialogTwo" data-transition="slidedown" data-rel="dialog"><Center>Two</Center></a></li>
+        <li><a href="#dialogThree" data-transition="slidedown" data-rel="dialog"><Center>Three</Center></a></li>
+        <li><a href="#dialogFour" data-transition="slidedown" data-rel="dialog"><Center>Four</Center></a></li>
+        <li><a href="#dialogFive" data-transition="slidedown" data-rel="dialog"><Center>Five</Center></a></li>
+        <li><a href="#dialogSix" data-transition="slidedown" data-rel="dialog"><Center>Six</Center></a></li>
+        <li><a href="#dialogSeven" data-transition="slidedown" data-rel="dialog"><Center>Seven</Center></a></li>
+        <li><a href="#dialogEight" data-transition="slidedown" data-rel="dialog"><Center>Eight</Center></a></li>
+        <li><a href="#dialogNine" data-transition="slidedown" data-rel="dialog"><Center>Nine</Center></a></li>
+        <li><a href="#dialogTen" data-transition="slidedown" data-rel="dialog"><Center>Ten</Center></a></li>
+        <li><a href="#dialogEleven" data-transition="slidedown" data-rel="dialog"><Center>Eleven</Center></a></li>
+        <li><a href="#dialogTwelve" data-transition="slidedown" data-rel="dialog"><Center>Twelve</Center></a></li>
+        <li><a href="#dialogThirteen" data-transition="slidedown" data-rel="dialog"><Center>Thirteen</Center></a></li>
+        <li><a href="#dialogFourteen" data-transition="slidedown" data-rel="dialog"><Center>Fourteen</Center></a></li>
+        <li><a href="#dialogFifteen" data-transition="slidedown" data-rel="dialog"><Center>Fifteen</Center></a></li>
+        <li><a href="#dialogSixteen" data-transition="slidedown" data-rel="dialog"><Center>Sixteen</Center></a></li>
+        <li><a href="#dialogSeventeen" data-transition="slidedown" data-rel="dialog"><Center>Seventeen</Center></a></li>
+        <li><a href="#dialogEighteen" data-transition="slidedown" data-rel="dialog"><Center>Eighteen</Center></a></li>
+        <li><a href="#dialogNineteen" data-transition="slidedown" data-rel="dialog"><Center>Nineteen</Center></a></li>
+        <li><a href="#dialogTwenty" data-transition="slidedown" data-rel="dialog"><Center>Twenty</Center></a></li>
+        <li><a href="#dialog30" data-transition="slidedown" data-rel="dialog"><Center>Thirty</Center></a></li>
+        <li><a href="#dialog40" data-transition="slidedown" data-rel="dialog"><Center>Fourty</Center></a></li>
+        <li><a href="#dialog50" data-transition="slidedown" data-rel="dialog"><Center>Fifty</Center></a></li>
+        <li><a href="#dialog60" data-transition="slidedown" data-rel="dialog"><Center>Sixty</Center></a></li>
+        <li><a href="#dialog70" data-transition="slidedown" data-rel="dialog"><Center>Seventy</Center></a></li>
+        <li><a href="#dialog80" data-transition="slidedown" data-rel="dialog"><Center>Eighty</Center></a></li>
+        <li><a href="#dialog90" data-transition="slidedown" data-rel="dialog"><Center>Ninety</Center></a></li>
+        <li><a href="#dialog100" data-transition="slidedown" data-rel="dialog"><Center>Hundred</Center></a></li>
+        </ul>
+    !-->
+    
+	</div>
+	<div data-role="footer">
+		<img src="img/cross4-small.jpg" align="left"><h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+
+
+
+
+
+<div data-role="dialog" id="dialogKhmerRouge">
+    <div data-role="header">
+    <h1>Khmer Rouge</h1>
+	</div>
+	<div data-role="content">	
+            <p>From Wikipedia:</p> <br>
+        <p>   The Khmer Rouge (Khmer: Khmer Krahom) literally translated as Red Khmers was the name given to the followers of the Communist Party of Kampuchea in Cambodia. It was formed in 1968 as an offshoot of the Vietnam People's Army from North Vietnam, who were the ruling party in Cambodia from 1975 to 1979, led by Pol Pot, Nuon Chea, Ieng Sary, Son Sen, and Khieu Samphan. Democratic Kampuchea was the name of the state as controlled by the government of the Khmer Rouge from 1975 to 1979.</p><p>
+This organization is remembered primarily for its policy of social engineering, which resulted in genocide. Its attempts at agricultural reform led to widespread famine, while its insistence on absolute self-sufficiency, even in the supply of medicine, led to the deaths of thousands from treatable diseases such as malaria. Arbitrary executions and torture carried out by its cadres against perceived subversive elements, or during purges of its own ranks between 1975 and 1978, are considered to have constituted genocide.</p><p>
+By 1979, the Khmer Rouge had fled the country, while the People’s Republic of the Kampuchea was being established. This meant that life started going back to the way it was pre-Khmer Rouge. The governments-in-exile (including the Khmer Rouge) still had a seat in the UN at this point but it was later taken away, in 1993, as the monarchy was restored and the country underwent a name change to the Kingdom of Cambodia. A year later thousands of Khmer Rouge guerrillas surrendered themselves in a government amnesty. In 1996, a new political party the Democratic National Union Movement was formed by Ieng Sary, who was granted amnesty for all of his roles as the deputy leader of the Khmer Rouge. The organisation itself was officially dissolved sometime in December 1999.</p>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+<div data-role="dialog" id="dialogMap1">
+    <div data-role="header">
+    <h1>Cambodia World Map</h1>
+	</div>
+	<div data-role="content">	
+    <img src="img/cambodia-map-world.jpg" width="100%" height="99%">
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogMap2">
+    <div data-role="header">
+    <h1>Phnom Penh</h1>
+	</div>
+	<div data-role="content">	
+    <img src="img/PhnomPenh.jpg" width="100%" height="99%">
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+
+<div data-role="dialog" id="dialogAbout">
+    <div data-role="header">
+    <h1>The Developer</h1>
+	</div>
+	<div data-role="content"><center>	
+    <img src="img/bryan-profile-small-b&w.jpg"></center>
+	</div>
+	<div data-role="footer">
+    <h4>Missionary Helper - Cambodia</h4>
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogJohn316">
+    <div data-role="header">
+    <h1>John 3:16</h1>
+	</div>
+	<div data-role="content">	
+    <center><audio id="audioJohn3-16" src="mp3/John3-16.mp3" preload="auto" controls></audio></center><br><br>
+    <img src="img/john316.png" width="100%" height="98%">
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogRomans10-13">
+    <div data-role="header">
+    <h1>Romans 10:13</h1>
+	</div>
+	<div data-role="content">	
+    <center><audio id="audioRomans10-13" src="mp3/Romans10-13.mp3" preload="auto" controls></audio></center><br><br>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+<div data-role="dialog" id="dialogSmile">
+    <div data-role="header">
+    <h1>Smile!</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioRomans10-13" src="mp3/SmilePlease.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialog2Corinthians5-21">
+    <div data-role="header">
+    <h1>2 Corinthians 5:21</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audio2C521" src="mp3/2Corinthians5-21.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogRomans3-23">
+    <div data-role="header">
+    <h1>Romans 3:23</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioR323" src="mp3/Romans3-23.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogRomans5-8">
+    <div data-role="header">
+    <h1>Romans 5:8</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioR5-8" src="mp3/Romans5-8.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogRomans6-23">
+    <div data-role="header">
+    <h1>Romans 6:23</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioR6-23" src="mp3/Romans6-23.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogRomans10-9-10">
+    <div data-role="header">
+    <h1>Romans 10:9-10</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioR10-9-10" src="mp3/Romans10-9-10.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogEphesians2-8-9">
+    <div data-role="header">
+    <h1>Ephesians 2:8-9</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="audioE2-8-9" src="mp3/Ephesians2-8-9.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogHello">
+    <div data-role="header">
+    <h1>Hello!</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="hello" src="mp3/Hello.mp3" preload="auto" controls></audio></center><br><br>
+    <img src="img/hello.png"> <br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogHospital">
+    <div data-role="header">
+    <h1>Take Me to The Hospital</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="hello" src="mp3/TakeMeToHospital.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+<div data-role="dialog" id="dialogEmbassy">
+    <div data-role="header">
+    <h1>Take Me To The American Embassy</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center><audio id="hello" src="mp3/TakeMeToAmericanEmbassy.mp3" preload="auto" controls></audio></center><br><br>
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+<div data-role="dialog" id="dialogEmergencyNumbers">
+    <div data-role="header">
+    <h1>Emergency Phone Numbers</h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    American Embassy:  (855-23) 728-000
+    Embassy of the United States of America
+#1, Street 96, Sangkat Wat Phnom, Khan Daun Penh, Phnom Penh
+    </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+
+<div data-role="dialog" id="dialog">
+    <div data-role="header">
+    <h1></h1>
+	</div>
+	<div data-role="content">	
+    <center>
+    <center> </center>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	function play_single_sound(audioID) {
+		document.getElementById(audioID).play();
+	}
+</script>
+
+
+</body>
+</html>

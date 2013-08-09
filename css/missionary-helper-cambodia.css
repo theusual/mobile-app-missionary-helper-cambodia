@@ -1,0 +1,5 @@
+.ui-dialog {
+    background-image:url(themes/images/background.gif) !important;
+}
+
+.ui-dialog .ui-header, .ui-dialog .ui-content, .ui-dialog .ui-footer { max-width: 100%; }
